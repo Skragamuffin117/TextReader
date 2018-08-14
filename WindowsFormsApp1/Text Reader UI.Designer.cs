@@ -30,11 +30,12 @@
         {
             this.Read = new System.Windows.Forms.Button();
             this.Sort = new System.Windows.Forms.Button();
+            this.TextList = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // Read
             // 
-            this.Read.Location = new System.Drawing.Point(190, 10);
+            this.Read.Location = new System.Drawing.Point(187, 39);
             this.Read.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Read.Name = "Read";
             this.Read.Size = new System.Drawing.Size(56, 28);
@@ -46,7 +47,7 @@
             // 
             // Sort
             // 
-            this.Sort.Location = new System.Drawing.Point(156, 43);
+            this.Sort.Location = new System.Drawing.Point(158, 71);
             this.Sort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Sort.Name = "Sort";
             this.Sort.Size = new System.Drawing.Size(123, 27);
@@ -55,11 +56,21 @@
             this.Sort.UseVisualStyleBackColor = true;
             this.Sort.Click += new System.EventHandler(this.Sort_Click);
             // 
+            // TextList
+            // 
+            this.TextList.Location = new System.Drawing.Point(82, 103);
+            this.TextList.Name = "TextList";
+            this.TextList.Size = new System.Drawing.Size(272, 316);
+            this.TextList.TabIndex = 2;
+            this.TextList.UseCompatibleStateImageBehavior = false;
+            this.TextList.SelectedIndexChanged += new System.EventHandler(this.TextList_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 496);
+            this.ClientSize = new System.Drawing.Size(448, 476);
+            this.Controls.Add(this.TextList);
             this.Controls.Add(this.Sort);
             this.Controls.Add(this.Read);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -74,6 +85,7 @@
 
         private System.Windows.Forms.Button Read;
         private System.Windows.Forms.Button Sort;
+        private System.Windows.Forms.ListView TextList;
     }
 }
 

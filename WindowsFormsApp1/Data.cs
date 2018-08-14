@@ -24,15 +24,15 @@ namespace WindowsFormsApp1
             return document;
         }
 
-        public void CollectData(string document)
+        public List<string> CollectData(string document)
         {
             StreamReader reader = new StreamReader(document);
-            string collectdata = reader.ReadLine(document);
             List<string> List = new List<string>();
             while (reader.Peek() >= 0)
             {
-                List.Add(reader.ReadLine);
+                List.Add(reader.ReadLine());
             }
+            return List;
         }
     }
 }

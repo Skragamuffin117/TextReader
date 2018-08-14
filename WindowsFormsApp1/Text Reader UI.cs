@@ -22,7 +22,12 @@ namespace WindowsFormsApp1
         {
             Data read = new Data();
             string Text = read.Browse();
-            read.CollectData(Text);
+            List<string> list = read.CollectData(Text);
+        }
+
+        private void Publish()
+        {
+
         }
 
         private void Sort_Click(object sender, EventArgs e)
@@ -35,5 +40,9 @@ namespace WindowsFormsApp1
 
         }
 
+        private void TextList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
