@@ -21,7 +21,8 @@ namespace WindowsFormsApp1
         private void Read_Click(object sender, EventArgs e)
         {
             Data read = new Data();
-            read.Browse();            
+            string Text = read.Browse();
+            read.CollectData(Text);
         }
 
         private void Sort_Click(object sender, EventArgs e)

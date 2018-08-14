@@ -10,18 +10,29 @@ namespace WindowsFormsApp1
 {
     public class Data
     {
-        public void Browse()
+        public string Browse()
         {
+            string document = string.Empty;
             OpenFileDialog dialog = new OpenFileDialog();
 
             dialog.Title = "Open Text Document";
             dialog.Filter = "Text files|*.txt";
-            dialog.ShowDialog();
+            if(dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                document = dialog.FileName;
+            }
+            return document;
         }
 
-        public void Publish()
+        public void CollectData(string document)
         {
-
+            StreamReader reader = new StreamReader(document);
+            string collectdata = reader.ReadLine(document);
+            List<string> List = new List<string>();
+            while (reader.Peek() >= 0)
+            {
+                List.Add(reader.ReadLine);
+            }
         }
     }
 }

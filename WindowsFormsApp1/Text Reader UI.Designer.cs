@@ -34,9 +34,10 @@
             // 
             // Read
             // 
-            this.Read.Location = new System.Drawing.Point(254, 12);
+            this.Read.Location = new System.Drawing.Point(190, 10);
+            this.Read.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Read.Name = "Read";
-            this.Read.Size = new System.Drawing.Size(75, 35);
+            this.Read.Size = new System.Drawing.Size(56, 28);
             this.Read.TabIndex = 0;
             this.Read.Text = "Read";
             this.Read.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // 
             // Sort
             // 
-            this.Sort.Location = new System.Drawing.Point(208, 53);
+            this.Sort.Location = new System.Drawing.Point(156, 43);
+            this.Sort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Sort.Name = "Sort";
-            this.Sort.Size = new System.Drawing.Size(164, 33);
+            this.Sort.Size = new System.Drawing.Size(123, 27);
             this.Sort.TabIndex = 1;
             this.Sort.Text = "Sort Alphabetically";
             this.Sort.UseVisualStyleBackColor = true;
@@ -55,11 +57,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 610);
+            this.ClientSize = new System.Drawing.Size(448, 496);
             this.Controls.Add(this.Sort);
             this.Controls.Add(this.Read);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Text Reader";
             this.Load += new System.EventHandler(this.Form1_Load);
