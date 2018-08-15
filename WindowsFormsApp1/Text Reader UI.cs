@@ -23,16 +23,29 @@ namespace WindowsFormsApp1
             Data read = new Data();
             string Text = read.Browse();
             List<string> list = read.CollectData(Text);
+            Publish(list);
         }
 
-        private void Publish()
+        private void Publish(List<string> list)
         {
-
+            foreach(string item in list)
+            {
+                TextList.Items.Add(item);
+            }
         }
 
         private void Sort_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Alphabetize(List<string> TextList)
+        {
+            List<string> alphabet = new List<string>();
+            foreach(string item in TextList)
+            {
+                alphabet.Add(item);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

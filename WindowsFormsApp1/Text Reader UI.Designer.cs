@@ -35,8 +35,8 @@
             // 
             // Read
             // 
-            this.Read.Location = new System.Drawing.Point(187, 39);
-            this.Read.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Read.Location = new System.Drawing.Point(60, 11);
+            this.Read.Margin = new System.Windows.Forms.Padding(2);
             this.Read.Name = "Read";
             this.Read.Size = new System.Drawing.Size(56, 28);
             this.Read.TabIndex = 0;
@@ -47,8 +47,8 @@
             // 
             // Sort
             // 
-            this.Sort.Location = new System.Drawing.Point(158, 71);
-            this.Sort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Sort.Location = new System.Drawing.Point(26, 43);
+            this.Sort.Margin = new System.Windows.Forms.Padding(2);
             this.Sort.Name = "Sort";
             this.Sort.Size = new System.Drawing.Size(123, 27);
             this.Sort.TabIndex = 1;
@@ -58,22 +58,26 @@
             // 
             // TextList
             // 
-            this.TextList.Location = new System.Drawing.Point(82, 103);
+            this.TextList.Alignment = System.Windows.Forms.ListViewAlignment.Left;
+            this.TextList.CheckBoxes = true;
+            this.TextList.Location = new System.Drawing.Point(26, 73);
+            this.TextList.Margin = new System.Windows.Forms.Padding(1);
             this.TextList.Name = "TextList";
-            this.TextList.Size = new System.Drawing.Size(272, 316);
+            this.TextList.Size = new System.Drawing.Size(123, 129);
             this.TextList.TabIndex = 2;
             this.TextList.UseCompatibleStateImageBehavior = false;
+            this.TextList.View = System.Windows.Forms.View.List;
             this.TextList.SelectedIndexChanged += new System.EventHandler(this.TextList_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 476);
+            this.ClientSize = new System.Drawing.Size(177, 217);
             this.Controls.Add(this.TextList);
             this.Controls.Add(this.Sort);
             this.Controls.Add(this.Read);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Text Reader";
             this.Load += new System.EventHandler(this.Form1_Load);
