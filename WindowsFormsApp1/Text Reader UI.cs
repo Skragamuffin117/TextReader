@@ -36,16 +36,21 @@ namespace WindowsFormsApp1
 
         private void Sort_Click(object sender, EventArgs e)
         {
-
+            List<string> list = Alphabetize();
+            list.Sort();
+            TextList.Clear();
+            Publish(list);
         }
 
-        private void Alphabetize(List<string> TextList)
+        private List<string> Alphabetize()
         {
+            
             List<string> alphabet = new List<string>();
-            foreach(string item in TextList)
+            for (int i = 0; i < TextList.Items.Count; i++)
             {
-                alphabet.Add(item);
+                alphabet.Add(TextList.Items[i].Text);
             }
+            return alphabet;
         }
 
         private void Form1_Load(object sender, EventArgs e)
